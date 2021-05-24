@@ -3,6 +3,7 @@
     y no encontré otra manera de solucionarlo)*/
 
 /*(En mi servidor de node/express si se consume la api como dice la consigna)*/
+// Repositorio del servidor: https://github.com/FelixSchugu/Server-api
 
 // Se hace una petición GET a la api de mi servidor
 const url = "https://server-api-prueba.herokuapp.com/api";
