@@ -5,7 +5,7 @@
 /*(En mi servidor de node/express si se consume la api como dice la consigna)*/
 
 // Se hace una petición GET a la api de mi servidor
-const url = "http://localhost:3000/api";
+const url = "https://server-api-prueba.herokuapp.com/api";
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
