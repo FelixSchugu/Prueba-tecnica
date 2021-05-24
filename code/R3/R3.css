@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+}
+
+#video-div {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
+    url("./videoThumbnail.jpg");
+  background-size: cover;
+  width: 40%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#play-btn {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+#play-btn:active{
+    color: black;
+}
+#play-btn:visited {
+    color: black;
+}
+
+#play-btn:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+#text-div {
+  width: 60%;
+  height: 40%;
+  padding: 25px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99999;
+  overflow: hidden;
+}
+.modal a {
+  align-self: flex-end;
+  margin-bottom: 5px;
+}
+
+.modal a:visited {
+  color: white;
+}
+
+.modal:target {
+  transition: opacity 400ms ease-in-out;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
+.videoContainer {
+  width: 95%;
+  height: 60%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  border-radius: 5px;
+}
+
+video {
+  width: 600px;
+  height: 760px;
+}
+
+@media (max-width: 880px) {
+  #video-div {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #text-div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 628px) {
+  video {
+    width: 90%;
+    height: 75%;
+  }
+}
+
+@media (max-width: 412px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin: 0px;
+  }
+
+  #video-div {
+    width: 100%;
+  }
+
+  #text-div {
+    width: 80%;
+  }
+}

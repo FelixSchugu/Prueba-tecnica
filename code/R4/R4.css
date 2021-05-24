@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+
+#main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  font-family: "KoHo", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  height: 50%;
+}
+
+#title-div {
+  display: grid;
+  grid-template-columns: 2;
+  align-content: center;
+}
+#title-div p {
+  grid-column: 1;
+}
+
+#title-div img {
+  grid-column: 2;
+  position: relative;
+  align-self: center;
+  justify-self: end;
+  margin-left: 10px;
+}
+
+td,
+th {
+  padding: 5px;
+  border: 1px solid darkgray;
+  text-align: left;
+  height: 10%;
+}
+
+thead th {
+  background-color: white;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+tbody tr:nth-child(even) {
+  background-color: white;
+}
