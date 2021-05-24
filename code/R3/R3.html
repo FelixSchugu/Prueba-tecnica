@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <title>Ejercicio 3</title>
+  <body id="main-container">
+    <div id="modal-video" class="modal">
+      <div class="videoContainer">
+        <a href="#home" onclick="setOverflow()">Cerrar</a>
+        <video src="./videoSample.mp4" controls></video>
+      </div>
+    </div>
+    <div id="video-div">
+      <a id="play-btn" href="#modal-video" onclick="hideOverflow()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          fill="currentColor"
+          class="bi bi-play-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div id="text-div">
+      <h1>
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit..
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius
+        lacinia lorem ut sodales. Nulla sollicitudin euismod felis. Praesent non
+        nunc enim. Ut vel nisi et ante convallis imperdiet. Fusce tincidunt ac
+        urna et efficitur. Donec sodales nulla a efficitur ornare. Morbi quis
+        dignissim nibh, et semper leo.
+      </p>
+    </div>
+  </body>
+
+  <link href="./R3.css" rel="stylesheet" type="text/css" />
+
+  <script src="./R3.js"></script>
+</html>
